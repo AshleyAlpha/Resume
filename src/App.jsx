@@ -1,18 +1,19 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { BrowserRouter, Outlet, Route, Routes } from "react-router-dom";
+import { useState } from "react";
+
+// import './App.css'
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-       <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-    </>
-  )
+    <div>
+      {/* <BrowserRouter> */}
+      <Header />
+      <Footer />
+      {/* </BrowserRouter> */}
+    </div>
+  );
 }
 
-export default App
+export default App;
